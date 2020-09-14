@@ -4,14 +4,50 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main {
-  padding: 5rem 0;
+  padding:4rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.linkImageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkWrapper, .imageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkWrapper {
+  flex: 1 0;
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.linkWrapper a {
+  text-decoration: none;
+}
+
+.linkWrapper a:hover,
+.linkWrapper a:focus,
+.linkWrapper a:active {
+  text-decoration: underline;
+}
+
+.imageWrapper {
+  flex: 2 1;
+}
+
+.imageWrapper img {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
 }
 
 .link {
@@ -25,31 +61,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  padding: 1rem;
+  line-height: 1.5rem;
 }
 
 .title {
-  margin: 0;
+  margin: 0 0 2rem;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+  .linkImageContainer {
+    flex-direction: row;    
+  }
+  .imageWrapper {
+    margin-left: 30px;
+  }
 }
