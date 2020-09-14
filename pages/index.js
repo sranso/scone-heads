@@ -1,38 +1,21 @@
-import Head from 'next/head'
 import Link from 'next/link'
-import { useState, useEffect } from 'react';
 
-import ScorgyEasterEgg from '../components/ScorgyEasterEgg'
+import Layout from '../components/Layout'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className={styles.container} onClick={() => setCount(count + 1)}>
-      <Head>
-        <title>Scone Heads</title>
-        <meta name="description" content="Scone Heads. For scone lovers, by scone lovers. Made by Nan Ransohoff, Sarah Ransohoff, and Sarah Sherman."/>
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;900&display=swap" rel="stylesheet"/>
-      </Head>
-
-      <ScorgyEasterEgg count={count} setCount={setCount} />
-
+    <Layout>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Scone Heads
-        </h1>
-
         <div className={styles.linkImageContainer}>
           <div className={styles.linkWrapper}>
-            <Link href="/">
+            <Link href="/art-of-the-scone">
               <a>
                 <h3 className={styles.link}>Art of the Scone</h3>
               </a>
             </Link>
 
-            <Link href="/">
+            <Link href="/cv">
               <a>
                 <h3 className={styles.link}>CV</h3>
               </a>
@@ -52,12 +35,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <p>Made with buttery love by Nan Ransohoff, Sarah Sherman, and&nbsp;
-          <a href="https://sarahransohoff.com" target="_blank">Sarah Ransohoff</a>.
-        </p>
-      </footer>
-    </div>
+    </Layout>
   )
 }
