@@ -13,6 +13,16 @@ const Layout = (props) => {
       <Head>
         <title>Scone Heads</title>
         <meta name="description" content="For scone lovers, by scone lovers. Made by Nan Ransohoff, Sarah Ransohoff, and Sarah Sherman."/>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177913389-3"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-177913389-3');
+          `}}>
+        </script>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;900&display=swap" rel="stylesheet"/>
       </Head>
