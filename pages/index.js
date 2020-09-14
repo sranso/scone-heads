@@ -1,16 +1,23 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState, useEffect } from 'react';
+
+import ScorgyEasterEgg from '../components/ScorgyEasterEgg'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={() => setCount(count + 1)}>
       <Head>
         <title>Scone Heads</title>
         <meta name="description" content="Scone Heads. For scone lovers, by scone lovers. Made by Nan Ransohoff, Sarah Ransohoff, and Sarah Sherman."/>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;900&display=swap" rel="stylesheet"/>
       </Head>
+
+      <ScorgyEasterEgg count={count} setCount={setCount} />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
