@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useState } from 'react';
 
-import ScorgyEasterEgg from '../components/ScorgyEasterEgg'
-import styles from '../styles/Home.module.css'
+import EasterEggScorgy from '../components/EasterEggScorgy'
+import styles from '../styles/Layout.module.css'
 
 const Layout = (props) => {
   const [count, setCount] = useState(0)
@@ -11,15 +12,17 @@ const Layout = (props) => {
 	<div className={styles.container} onClick={() => setCount(count + 1)}>
       <Head>
         <title>Scone Heads</title>
-        <meta name="description" content="Scone Heads. For scone lovers, by scone lovers. Made by Nan Ransohoff, Sarah Ransohoff, and Sarah Sherman."/>
+        <meta name="description" content="For scone lovers, by scone lovers. Made by Nan Ransohoff, Sarah Ransohoff, and Sarah Sherman."/>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;900&display=swap" rel="stylesheet"/>
       </Head>
 
-      <ScorgyEasterEgg count={count} setCount={setCount} />
-	  <h1>
-        Scone Heads
-      </h1>
+      <EasterEggScorgy count={count} setCount={setCount} />
+	  <Link href="/">
+	  	<a><h1>
+          Scone Heads
+      	</h1></a>
+      </Link>
 
       {props.children}
 

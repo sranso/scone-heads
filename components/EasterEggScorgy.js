@@ -1,15 +1,14 @@
 import styles from '../styles/EasterEggs.module.css'
-import homeStyles from '../styles/Home.module.css'
 
-const ScorgyEasterEgg = ({ count, setCount }) => {
+const EasterEggScorgy = ({ count, setCount }) => {
 	if (count === 0 || count % 3 !== 0) return <span />;
 
 	setTimeout(() => setCount(0), 1000)
 	return (
-		<div className={homeStyles.scorgy}>
+		<div className={styles.scorgy}>
 			<img src="/scorgy.jpeg" />
 		</div>
 	)
 }
 
-export default ScorgyEasterEgg
+export default EasterEggScorgy
