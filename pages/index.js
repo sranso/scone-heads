@@ -54,8 +54,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Made with buttery love by
-          &nbsp;Nan Ransohoff, Sarah Sherman, and&nbsp;
+        <p>Made with buttery love by Nan Ransohoff, Sarah Sherman, and&nbsp;
           <a href="https://sarahransohoff.com" target="_blank">Sarah Ransohoff</a>.
         </p>
       </footer>
