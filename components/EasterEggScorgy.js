@@ -6,7 +6,7 @@ const EasterEggScorgy = ({ count, setCount }) => {
 	setTimeout(() => setCount(0), 1000)
 	return (
 		<div className={styles.scorgy}>
-			<img src="/scorgy.jpeg" />
+			<img src="/scorgy.png" />
 		</div>
 	)
 }
