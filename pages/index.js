@@ -9,9 +9,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.linkImageContainer}>
           <div className={styles.linkWrapper}>
-            <Link href="/art-of-the-scone">
+            <Link href="/shop">
               <a>
-                <h3>Art of the Scone</h3>
+                <h3>Shop</h3>
               </a>
             </Link>
 
@@ -26,7 +26,7 @@ export default function Home() {
             </a>
 
             <a href="mailto:team.scone.heads@gmail.com" target="_blank">
-              <h3>Submissions</h3>
+              <h3>Contact & Submissions</h3>
             </a>
           </div>
 
