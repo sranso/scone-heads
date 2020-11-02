@@ -37,8 +37,9 @@ const Layout = (props) => {
       {props.children}
 
       <footer className={styles.footer}>
-        <p>Made with buttery love by Nan Ransohoff, Sarah Sherman, and&nbsp;
-          <a href="https://sarahransohoff.com" target="_blank">Sarah Ransohoff</a>.
+        <p>Made with buttery love by&nbsp;
+          <a href="https://sarahransohoff.com" target="_blank" className={styles.footerLink}>Sarah Ransohoff,</a>
+          &nbsp;Nan Ransohoff, and Sarah Sherman.
         </p>
       </footer>
     </div>

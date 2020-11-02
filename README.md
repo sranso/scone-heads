@@ -6,7 +6,6 @@ This is a project built by Sarah Ransohoff. It was imagined by her, Nan Ransohof
 - [ ] more easter eggs, but what!
 - [ ] add cv
 - [ ] add art examples
-- [ ] make sure gmail is working still
 
 # The tech stuff
 

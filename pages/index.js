@@ -25,7 +25,7 @@ export default function Home() {
               <h3>Examples</h3>
             </a>
 
-            <a href="mailto:team@scone-heads.com" target="_blank">
+            <a href="mailto:team.scone.heads@gmail.com" target="_blank">
               <h3>Submissions</h3>
             </a>
           </div>
