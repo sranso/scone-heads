@@ -4,6 +4,7 @@ import styles from '../styles/Merch.module.css'
 
 const Shop = () => (
 	<Layout>
+		<h2 className={styles.sd}>Shop the Scone</h2>
 		<div className={styles.wrapper}>
 			<Merch
 				imgSrc="/scandle.jpg"
