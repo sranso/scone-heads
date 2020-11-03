@@ -25,20 +25,23 @@ const Layout = (props) => {
         </script>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"/>
       </Head>
 
       <EasterEggScorgy count={count} setCount={setCount} />
-	    <Link href="/">
-	  	  <a><h1>
-          Scone Heads
-      	</h1></a>
-      </Link>
+      <header>
+  	    <Link href="/">
+  	  	  <a><h1>
+            Scone Heads
+        	</h1></a>
+        </Link>
+      </header>
 
       {props.children}
 
-      <footer className={styles.footer}>
+      <footer>
         <p>Made with buttery love by&nbsp;
-          <a href="https://sarahransohoff.com" target="_blank" className={styles.footerLink}>Sarah Ransohoff,</a>
+          <a href="https://sarahransohoff.com" target="_blank">Sarah Ransohoff,</a>
           &nbsp;Nan Ransohoff, and Sarah Sherman.
         </p>
       </footer>
