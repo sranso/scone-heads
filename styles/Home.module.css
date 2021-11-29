@@ -10,7 +10,8 @@
   flex-direction: column;
 }
 
-.linkWrapper, .imageWrapper {
+.linkWrapper,
+.imageWrapper {
   display: flex;
   flex-direction: column;
 }
@@ -49,13 +50,12 @@
   flex: 1;
 }
 
-
 @media (min-width: 600px) {
   .main {
     padding-top: 4rem;
   }
   .linkImageContainer {
-    flex-direction: row;    
+    flex-direction: row;
   }
   .imageWrapper {
     margin-left: 30px;

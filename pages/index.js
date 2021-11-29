@@ -1,7 +1,7 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import Layout from '../components/Layout'
-import styles from '../styles/Home.module.css'
+import Layout from "../components/Layout";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -31,10 +31,10 @@ export default function Home() {
           </div>
 
           <div className={styles.imageWrapper}>
-            <img src="/scone-hero.jpg"/>
+            <img src="/scone-hero.jpg" />
           </div>
         </div>
       </main>
     </Layout>
-  )
+  );
 }
