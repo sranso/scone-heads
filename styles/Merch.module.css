@@ -1,28 +1,116 @@
+/* shop.js */
+
 .wrapper {
-	display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.merch {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 50%;
-    max-height: 550px;
-}
-
-.img {
-	max-width:100%;
-    max-height:90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
-	.wrapper {
-		flex-direction: row;
-    	align-items: unset;
-	}
+  .wrapper {
+    align-items: unset;
+    flex-direction: row;
+  }
+}
+
+/* Merch.js */
+
+.merch {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-height: 550px;
+  margin-bottom: 2rem;
+}
+
+.img,
+.slider {
+  width: 300px;
+}
+
+@media (min-width: 600px) {
+  .img,
+  .slider {
+    width: 400px;
+  }
+}
+
+.img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carouselImg {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: center;
+  margin-right: 50px;
+  object-fit: contain;
+  position: relative;
+  scroll-snap-align: start;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  width: 300px;
+}
+
+@media (min-width: 600px) {
+  .carouselImg {
+    width: 384px;
+  }
+}
+
+/* https://css-tricks.com/css-only-carousel/ */
+.slider {
+  text-align: center;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  height: 450px;
+  width: 100%;
+
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
 }
