@@ -1,0 +1,21 @@
+next.config.js
+  s_360a803540eb8a::t_f1fb28f5ec0545 1-6
+package.json
+  s_360a803540eb8a::t_29ca2f0993eca8 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7dc57e4749fec68bfdb096951e1615fdbae13c21",
+  "prompts": {},
+  "sessions": {
+    "s_360a803540eb8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "880ee6a4-519a-49c7-8931-a508e77e32cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
