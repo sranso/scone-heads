@@ -1,7 +1,14 @@
 import Layout from "../components/Layout";
 import styles from "../styles/About.module.css";
 
-const team = [
+type TeamMember = {
+  name: string;
+  role: string;
+  image: string;
+  summary: string;
+};
+
+const team: TeamMember[] = [
   {
     name: "Nan Ransohoff",
     role: "Co-founder",

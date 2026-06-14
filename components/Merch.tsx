@@ -1,8 +1,16 @@
+import type { MouseEvent } from "react";
+
 import styles from "../styles/Merch.module.css";
 
-const Merch = ({ images, description, alt }) => {
+type MerchProps = {
+  images: string | string[];
+  description: string;
+  alt: string;
+};
+
+const Merch = ({ images, description, alt }: MerchProps) => {
   const isCarousel = Array.isArray(images);
-  const handleClick = (e) => {
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     // e.preventDefault();
   };
   return (

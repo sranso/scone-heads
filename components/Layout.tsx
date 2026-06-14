@@ -1,14 +1,19 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
+import type { MouseEvent, ReactNode } from "react";
 
 import EasterEggScorgy from "../components/EasterEggScorgy";
 import styles from "../styles/Layout.module.css";
 
-const Layout = (props) => {
+type LayoutProps = {
+  children: ReactNode;
+};
+
+const Layout = (props: LayoutProps) => {
   const [count, setCount] = useState(0);
-  const handleGlobalClick = (e) => {
-    if (e.target.href) return;
+  const handleGlobalClick = (e: MouseEvent<HTMLDivElement>) => {
+    if ((e.target as HTMLAnchorElement).href) return;
     setCount(count + 1);
   };
 
