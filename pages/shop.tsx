@@ -4,7 +4,10 @@ import styles from "../styles/Merch.module.css";
 
 const Shop = () => (
   <Layout>
-    <h2 className={styles.sd}>Shop the Scone</h2>
+    <div className="pageIntro">
+      <h2>Shop the Scone</h2>
+      <p>Limited-edition goods for the scone-obsessed.</p>
+    </div>
     <div className={styles.wrapper}>
       <Merch
         alt="Tea towel"

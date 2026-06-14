@@ -37,7 +37,7 @@ const team: TeamMember[] = [
 
 const About = () => (
   <Layout>
-    <div className={styles.intro}>
+    <div className="pageIntro">
       <h2>Who we are</h2>
       <p>For scone lovers, by scone lovers. Meet the heads behind the scones.</p>
     </div>

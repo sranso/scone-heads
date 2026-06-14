@@ -1,24 +1,8 @@
-.intro {
-  margin: 0 auto 3rem;
-  max-width: 640px;
-  text-align: center;
-}
-
-.intro h2 {
-  font-weight: 200;
-  margin-bottom: 0.75rem;
-}
-
-.intro p {
-  font-weight: 200;
-  line-height: 1.5;
-  margin: 0;
-}
-
 .grid {
   display: grid;
-  gap: 2.5rem 2rem;
+  gap: var(--space-12) var(--space-8);
   grid-template-columns: 1fr;
+  padding: 0 var(--gutter);
   width: 100%;
 }
 
@@ -29,8 +13,8 @@
 
 .photo {
   aspect-ratio: 4 / 5;
-  background: #e6e6e6;
-  border-radius: 4px;
+  background: var(--color-surface);
+  border-radius: var(--space-1);
   overflow: hidden;
   width: 100%;
 }
@@ -43,20 +27,19 @@
 }
 
 .name {
-  font-weight: 400;
-  margin: 1rem 0 0.25rem;
+  font-weight: var(--weight-medium);
+  margin: var(--space-4) 0 var(--space-1);
 }
 
 .role {
-  font-weight: 200;
+  color: var(--color-muted);
   font-style: italic;
-  margin: 0 0 0.5rem;
-  opacity: 0.7;
+  margin: 0 0 var(--space-2);
 }
 
 .summary {
-  font-weight: 200;
-  line-height: 1.5;
+  color: var(--color-muted);
+  line-height: var(--leading-normal);
   margin: 0;
 }
 

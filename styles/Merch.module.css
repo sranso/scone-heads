@@ -1,4 +1,4 @@
-/* shop.js */
+/* shop.tsx */
 
 .wrapper {
   align-items: center;
@@ -7,6 +7,7 @@
   flex-grow: 1;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0 var(--gutter);
   width: 100%;
 }
 
@@ -17,14 +18,19 @@
   }
 }
 
-/* Merch.js */
+/* Merch.tsx */
 
 .merch {
   align-items: center;
   display: flex;
   flex-direction: column;
   max-height: 550px;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-8);
+}
+
+.merch p {
+  color: var(--color-muted);
+  text-align: center;
 }
 
 .img,
@@ -46,12 +52,12 @@
 
 .carouselImg {
   align-items: center;
-  background: #eee;
+  background: var(--color-surface);
   display: flex;
   flex-shrink: 0;
   height: auto;
   justify-content: center;
-  margin-right: 50px;
+  margin-right: var(--space-12);
   object-fit: contain;
   position: relative;
   scroll-snap-align: start;
@@ -89,7 +95,7 @@
   height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-  background: black;
+  background: var(--color-text);
   border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -98,19 +104,19 @@
 
 .slider > a {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--space-6);
+  height: var(--space-6);
   background: white;
   text-decoration: none;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 var(--space-2) 0;
   position: relative;
 }
 .slider > a:active {
   top: 1px;
 }
 .slider > a:focus {
-  background: #000;
+  background: var(--color-text);
 }

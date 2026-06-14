@@ -1,10 +1,60 @@
-html,
+:root {
+  /* Type */
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+
+  /* Spacing scale */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+
+  /* Shared horizontal page gutter */
+  --gutter: var(--space-8);
+
+  /* Color */
+  --color-text: #000;
+  --color-muted: #555;
+  --color-border: #eaeaea;
+  --color-surface: #e6e6e6;
+}
+
+html {
+  font-size: 87.5%; /* 14px base for all rem units */
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: Helvetica, arial, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
-  font-size: 12px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -16,39 +66,62 @@ a:hover {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 header {
   width: 100%;
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-8);
 }
 
 h1 {
-  font-family: "Yantramanav", sans-serif;
-  margin: 2rem 2rem 1rem 2rem;
-  line-height: 1.15;
-  font-size: 3.5rem;
+  font-family: var(--font-display);
+  font-weight: var(--weight-medium);
+  margin: var(--space-4) var(--gutter);
+  line-height: var(--leading-tight);
+  font-size: var(--text-3xl);
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-  font-size: 2rem;
-  margin: 1rem 0 1rem 2rem;
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-xl);
+  margin: var(--space-4) 0 var(--space-4) var(--gutter);
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-lg);
+}
+
+/* Shared centered page header (About, Shop, …) */
+.pageIntro {
+  margin: 0 auto var(--space-12);
+  max-width: 640px;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+
+.pageIntro h2 {
+  margin: 0 0 var(--space-3);
+}
+
+.pageIntro p {
+  color: var(--color-muted);
+  line-height: var(--leading-normal);
+  margin: 0;
 }
 
 footer {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  min-height: 100px;
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  line-height: 1.5rem;
+  padding: var(--space-4) var(--gutter);
+  line-height: var(--leading-normal);
+  color: var(--color-muted);
 }
 
 footer a {
