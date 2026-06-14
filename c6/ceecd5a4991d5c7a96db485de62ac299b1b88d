@@ -1,0 +1,14 @@
+components/Layout.js
+  h_e05c901b5a18cc 65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c6ceecd5a4991d5c7a96db485de62ac299b1b88d",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
