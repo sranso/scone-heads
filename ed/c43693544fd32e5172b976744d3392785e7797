@@ -1,0 +1,34 @@
+globals.d.ts
+  s_360a803540eb8a::t_fb0b3263ed3ac4 1-3
+components/EasterEggScorgy.tsx
+  s_360a803540eb8a::t_df0cd058f9b2d2 1-10
+package.json
+  s_360a803540eb8a::t_25fb98511c5551 18-19
+  s_360a803540eb8a::t_dc2a38951a4a5d 15-17,20
+pages/about.tsx
+  s_360a803540eb8a::t_b33b72cec29177 4-11
+pages/_app.tsx
+  s_360a803540eb8a::t_8fcc358fa690d4 1-5
+tsconfig.json
+  s_360a803540eb8a::t_c2fbf6381748ab 1-20
+components/Merch.tsx
+  s_360a803540eb8a::t_51f3870bad58d4 1-13
+components/Layout.tsx
+  s_360a803540eb8a::t_9c3db8711f4dd9 4-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "edc43693544fd32e5172b976744d3392785e7797",
+  "prompts": {},
+  "sessions": {
+    "s_360a803540eb8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "880ee6a4-519a-49c7-8931-a508e77e32cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
