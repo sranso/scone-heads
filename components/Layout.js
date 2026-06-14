@@ -50,9 +50,7 @@ const Layout = (props) => {
       <EasterEggScorgy count={count} setCount={setCount} />
       <header>
         <Link href="/">
-          <a>
-            <h1>Scone Heads</h1>
-          </a>
+          <h1>Scone Heads</h1>
         </Link>
       </header>
 
