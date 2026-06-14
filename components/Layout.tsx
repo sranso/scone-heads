@@ -69,7 +69,11 @@ const Layout = (props: LayoutProps) => {
           <a href="https://sarahransohoff.com" target="_blank">
             Sarah Ransohoff,
           </a>
-          &nbsp;Nan Ransohoff, Sarah Sherman, and Rebecca Lissner.
+          &nbsp;Nan Ransohoff,&nbsp;
+          <a href="https://sarahsherman.co" target="_blank">
+            Sarah Sherman,
+          </a>
+          &nbsp;and Rebecca Lissner.
         </p>
       </footer>
     </div>

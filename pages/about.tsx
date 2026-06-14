@@ -10,22 +10,23 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   {
-    name: "Nan Ransohoff",
-    role: "Co-founder",
-    image: "/team-nan.jpg",
-    summary: "A short summary about Nan goes here.",
-  },
-  {
     name: "Sarah Ransohoff",
     role: "Co-founder",
     image: "/team-sarah-ransohoff.jpg",
     summary: "A short summary about Sarah goes here.",
   },
   {
+    name: "Nan Ransohoff",
+    role: "Co-founder",
+    image: "/team-nan.jpg",
+    summary: "A short summary about Nan goes here.",
+  },
+  {
     name: "Sarah Sherman",
     role: "Co-founder",
     image: "/team-sarah-sherman.jpg",
-    summary: "A short summary about Sarah goes here.",
+    summary:
+      "A multidisciplinary brand marketer and writer working at the intersection of strategy and creative. Currently Head of Creative Strategy at SpecialGuest.",
   },
   {
     name: "Rebecca Lissner",
