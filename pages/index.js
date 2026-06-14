@@ -27,7 +27,7 @@ export default function Home() {
           </div>
 
           <div className={styles.imageWrapper}>
-            <img src="/scone-hero.jpg" />
+            <img src="/scone-hero-with-visitors.jpeg" />
           </div>
         </div>
       </main>
