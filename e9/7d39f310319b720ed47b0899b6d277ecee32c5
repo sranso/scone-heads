@@ -1,0 +1,23 @@
+components/Layout.js
+  s_360a803540eb8a::t_dea618bb177365 53
+package.json
+  s_360a803540eb8a::t_70ff9757aaf228 12-14
+pages/index.js
+  s_360a803540eb8a::t_2f2945e1486b8f 13,17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e97d39f310319b720ed47b0899b6d277ecee32c5",
+  "prompts": {},
+  "sessions": {
+    "s_360a803540eb8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "880ee6a4-519a-49c7-8931-a508e77e32cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
