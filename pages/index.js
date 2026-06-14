@@ -13,8 +13,8 @@ export default function Home() {
               <h3>Shop</h3>
             </Link>
 
-            <Link href="/cv">
-              <h3>CV</h3>
+            <Link href="/about">
+              <h3>About</h3>
             </Link>
 
             <a href="https://www.instagram.com/scone_heads/" target="_blank">
