@@ -1,0 +1,22 @@
+styles/About.module.css
+  s_360a803540eb8a::t_7fc161df99bd82 34-41
+  s_360a803540eb8a::t_b766b3ddb6a74e 1-33,42-73
+pages/index.js
+  s_360a803540eb8a::t_41aa325dccbf0f 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "a07bf8f5ab78c59ea9eaa0d4aacb17ae25b8f35d",
+  "prompts": {},
+  "sessions": {
+    "s_360a803540eb8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "880ee6a4-519a-49c7-8931-a508e77e32cf",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
