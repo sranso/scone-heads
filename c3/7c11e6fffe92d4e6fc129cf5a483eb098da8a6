@@ -1,0 +1,21 @@
+pages/about.tsx
+  s_610eb03b5ea134::t_b82b3b5333b09d 19-23,28-29
+components/Layout.tsx
+  s_610eb03b5ea134::t_112e43c8cb2202 72-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c37c11e6fffe92d4e6fc129cf5a483eb098da8a6",
+  "prompts": {},
+  "sessions": {
+    "s_610eb03b5ea134": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b4317798-a1cf-4285-b0ba-244f5845ac9f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
