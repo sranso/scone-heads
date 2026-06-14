@@ -62,7 +62,7 @@ const Layout = (props) => {
           <a href="https://sarahransohoff.com" target="_blank">
             Sarah Ransohoff,
           </a>
-          &nbsp;Nan Ransohoff, and Sarah Sherman.
+          &nbsp;Nan Ransohoff, Sarah Sherman, and Rebecca Lissner.
         </p>
       </footer>
     </div>
