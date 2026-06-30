@@ -1,0 +1,29 @@
+styles/Faq.module.css
+  s_a45ee89260c98b::t_68f8eb44118de1 1-32
+pages/faqs.tsx
+  h_e05c901b5a18cc 52
+  s_a45ee89260c98b::t_299bf7dce77210 1-51,53-66
+pages/index.tsx
+  s_a45ee89260c98b::t_8d49af33aa1991 20-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "cfc9781cdd0aea0d67309437b2afc104baf73350",
+  "prompts": {},
+  "humans": {
+    "h_e05c901b5a18cc": {
+      "author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  },
+  "sessions": {
+    "s_a45ee89260c98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5a5e2d65-2cbd-43e5-b69a-2ef6e2b7da91",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Sarah Ransohoff <sarah.ransohoff@clay.run>"
+    }
+  }
+}
