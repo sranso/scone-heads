@@ -17,6 +17,10 @@ export default function Home() {
               <h3>About</h3>
             </Link>
 
+            <Link href="/faqs">
+              <h3>FAQs</h3>
+            </Link>
+
             <a href="https://www.instagram.com/scone_heads/" target="_blank">
               <h3>Examples</h3>
             </a>
